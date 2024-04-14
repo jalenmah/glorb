@@ -1,10 +1,10 @@
 import TokenType.*
 
-class Lexer(val source: String) {
-    val tokens = ArrayList<Token>()
-    var start = 0
-    var current = 0
-    var line = 1
+class Lexer(private val source: String) {
+    private val tokens = ArrayList<Token>()
+    private var start = 0
+    private var current = 0
+    private var line = 1
 
     fun scanTokens(): List<Token> {
         println("Scanning..")
