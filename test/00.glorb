@@ -5,3 +5,4 @@
 319 // int literal
 69.420 // float literal
 variable = 32 // identifier
+while true // keywords
