@@ -19,8 +19,8 @@ fun main(args: Array<String>) {
     }
 }
 
-fun err(line: Int, message: String, where: String = "unknown") {
-    System.err.println("[line $line] Error in ${where}: $message")
+fun err(line: Int, message: String) {
+    System.err.println("Error [line $line] $message")
 }
 
 private fun runFile(path: String) {

@@ -5,6 +5,6 @@ class Token(
     private var line: Int
 ) {
     override fun toString(): String {
-        return "{ type = $type, lexeme = $lexeme }"
+        return "Token { type = $type, lexeme = $lexeme${if (literal != null) ", literal = $literal }" else ""}"
     }
 }
